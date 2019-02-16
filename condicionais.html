@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+
+<html>
+  <body>
+    <div id="app">
+      <p v-if="seen">Agora você me viu</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+      new Vue({
+        el: '#app',
+        data: {
+          seen: true
+        }
+      });
+    </script>
+  </body>
+</html>
