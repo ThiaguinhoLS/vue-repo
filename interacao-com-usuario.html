@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="app">
+      <p>{{ message }}</p>
+      <button @click="reverseMessage">Inverter mensagem</button>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script>
+    new Vue({
+      el: '#app',
+      data: {
+        message: 'Hello Vue.js'
+      },
+      methods: {
+        reverseMessage() {
+          this.message = this.message.split('').reverse().join('');
+        }
+      }
+    });
+  </script>
+</html>
