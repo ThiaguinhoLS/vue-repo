@@ -1,0 +1,19 @@
+<!DOCTYPe html>
+<html>
+  <body>
+    <div id="app">
+      <paragraph text="Hello World with Vue.js"></paragraph>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+      Vue.component('paragraph', {
+        template: '<p>{{ text }}</p>',
+        props: ['text']
+      });
+
+      new Vue({
+        el: '#app'
+      });
+    </script>
+  </body>
+</html>
